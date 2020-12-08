@@ -7,11 +7,12 @@
     "noImplicitAny": true,
     "alwaysStrict": true,
     "sourceMap": true,
+    "allowJs": true,
     "moduleResolution": "node",
     "outDir": "./dist/",
     "module": "es6",
-    "target": "es6",
-    "lib": ["dom"],
+    "target": "es5",
+    "lib": ["es6", "dom"],
     "jsx": "react"
   }
 }

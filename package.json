@@ -1,12 +1,12 @@
 {
-  "name": "typescript-react-app",
+  "name": "typescript-react-electron-app",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
+  "main": "index.js",
   "scripts": {
-    "start": "run-p dev:*",
+    "start": "run-p start:*",
     "start:devtools": "npx react-devtools",
-    "start:electron": "npx electron main http://localhost:5500",
+    "start:electron": "npx electron .",
     "start:webpack": "npx webpack"
   },
   "author": "",
@@ -19,8 +19,7 @@
     "electron": "^9.1.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-transition-group": "^4.4.1",
-    "eventemitter2": "^6.4.3"
+    "react-transition-group": "^4.4.1"
   },
   "devDependencies": {
     "yargs": "^15.4.1",
