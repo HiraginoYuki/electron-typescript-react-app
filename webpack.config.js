@@ -8,20 +8,23 @@ module.exports = {
   watch: true,
   devtool: 'source-map',
   resolve: {
-    extensions: ['.ts', '.tsx', '.js']
+    extensions: ['.ts', '.tsx', '.js', '.scss']
   },
   target: 'electron-renderer',
 
   module: {
     rules: [
       {
-        test: /\.(sa|sc|c)ss$/,
+        test: /\.(sc|c)ss$/,
         exclude: /node_modules/,
         use: [
           'style-loader',
           {
             loader: 'css-loader',
-            options: { url: false }
+            options: {
+              url: false,
+              modules: 'local',
+            }
           },
           'sass-loader'
         ]
