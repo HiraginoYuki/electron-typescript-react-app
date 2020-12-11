@@ -1,7 +1,8 @@
 import React from "react";
+import styles from './index.module.scss';
 
 export function App() {
   return <>
-    Hello World!
+    <div className={styles.textRed}>Hello World!</div>
   </>;
 }
